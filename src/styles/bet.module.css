@@ -15,10 +15,10 @@
 }
 
 .number {
-  width: 2rem;
-  height: 2rem;
-  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
   margin: 0 0.5rem 0 0.5rem;
-  border-radius: 4rem;
+  border-radius: 50%;
   background-color: lightgray;
 }
