@@ -6,19 +6,29 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   const [betsResults, setBetsResults] = useState([] as number[][]);
 
-  function generateBets(event: MouseEvent, betsQty: number = 10) {
+  function generateBets(
+    event: MouseEvent,
+    betsQty: number = 10,
+    numbersQty: number = 6
+  ) {
     event.preventDefault();
 
-    const betsNumbers = Array(6)
-      .fill(0)
-      .map((e) => Math.ceil(Math.random() * 60))
-      .sort((a, b) => a - b);
-    const betsResults = Array(betsQty)
-      .fill(0)
-      .map((e) => betsNumbers);
+    let results = [];
 
-    setBetsResults(betsResults);
-    console.log(betsResults);
+    function bet(): number[] {
+      let numbers = new Set<number>();
+      while (numbers.size < numbersQty) {
+        numbers.add(Math.ceil(Math.random() * 60));
+      }
+
+      return Array.from(numbers.values()).sort((a,b) => a-b);
+    }
+
+    for (let i = 0; i < betsQty; i++) {
+      results.push(bet());
+    }
+
+    setBetsResults(results);
   }
 
   return (
