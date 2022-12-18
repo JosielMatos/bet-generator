@@ -1,0 +1,24 @@
+.bet-container + .bet-container {
+  margin-top: 1rem;
+}
+
+.numbers-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.bet-number {
+  margin-bottom: 1rem;
+}
+
+.number {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  border-radius: 4rem;
+  background-color: lightgray;
+}
