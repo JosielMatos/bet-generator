@@ -18,8 +18,8 @@ export default function Home() {
 
   function generateBets(
     event: MouseEvent,
-    betsQty: number = 10,
-    numbersQty: number = 6
+    betsQty: number,
+    numbersQty: number
   ) {
     event.preventDefault();
     if (betsQty <= 0) {
@@ -27,8 +27,7 @@ export default function Home() {
       return;
     }
 
-    let results = [];
-
+    //Generate list of numbers for 1 bet
     function bet(): number[] {
       let numbers = new Set<number>();
       while (numbers.size < numbersQty) {
@@ -37,6 +36,9 @@ export default function Home() {
 
       return Array.from(numbers.values()).sort((a, b) => a - b);
     }
+
+    //Generate a list of bets
+    let results = [];
 
     for (let i = 0; i < betsQty; i++) {
       results.push(bet());
