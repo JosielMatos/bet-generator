@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [betsResults, setBetsResults] = useState([] as number[][]);
-  const [numbersQty, setNumbersQty] = useState<number>(4);
+  const [numbersQty, setNumbersQty] = useState<number>(6);
   const [betsQty, setBetsQty] = useState<number>(1);
 
   function handleNumbersQty(event: React.ChangeEvent<HTMLSelectElement>) {
@@ -74,8 +74,6 @@ export default function Home() {
               id='numbers-qty'
               onChange={handleNumbersQty}
             >
-              <option value='4'>4</option>
-              <option value='5'>5</option>
               <option value='6'>6</option>
               <option value='7'>7</option>
               <option value='8'>8</option>
