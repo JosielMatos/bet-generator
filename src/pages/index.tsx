@@ -62,6 +62,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Gerador de apostas</h1>
+        <h2 className={styles.subTitle}>Mega-Sena</h2>
 
         <div className={styles["form-options"]}>
           <div>

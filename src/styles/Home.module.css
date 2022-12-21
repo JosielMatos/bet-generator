@@ -8,6 +8,11 @@
 
 .title {
   font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+}
+
+.subTitle {
+  font-family: var(--font-mono);
   margin-bottom: 2rem;
 }
 
