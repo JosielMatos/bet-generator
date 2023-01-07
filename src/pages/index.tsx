@@ -47,6 +47,7 @@ export default function Home() {
     setBetsResults(results);
   }
 
+  // Clear list of bets
   function clearBets() {
     setBetsResults([]);
   }
