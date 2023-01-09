@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <Head>
         <title>Gerador de Apostas</title>
-        <meta name='description' content='Make your bets easily' />
+        <meta name='description' content='Gere suas apostas facilmente!' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
