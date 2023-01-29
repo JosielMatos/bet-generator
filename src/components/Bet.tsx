@@ -7,7 +7,7 @@ interface BetsResultsProps {
 
 export function Bet({ numbers, betId }: BetsResultsProps) {
   return (
-    <li className={styles['bet-container']}>
+    <li className={styles["bet-container"]}>
       <p className={styles["bet-number"]}>Aposta {betId}</p>
 
       <ul className={styles["numbers-list"]}>
